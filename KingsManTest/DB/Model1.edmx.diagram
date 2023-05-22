@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="78532a21edc6497888ca1a357e3b7531" Name="Diagram1">
+        <EntityTypeShape EntityType="KingsManTestModel.Client" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingsManTestModel.Employee" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingsManTestModel.Gender" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingsManTestModel.Order" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingsManTestModel.OrderService" Width="1.5" PointX="7.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingsManTestModel.Position" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingsManTestModel.Service" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingsManTestModel.ServiceType" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingsManTestModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="KingsManTestModel.FK__Order__ClientId__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="KingsManTestModel.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="KingsManTestModel.FK__Employee__Positi__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="KingsManTestModel.FK__Order__EmployeeI__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="KingsManTestModel.FK_Employee_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="KingsManTestModel.FK__OrderServ__Order__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="KingsManTestModel.FK__OrderServ__Servi__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="KingsManTestModel.FK__Service__Service__4316F928" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,162 @@
+﻿<Window x:Class="KingsManTest.Windows.Admin.EditEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KingsManTest.Windows.Admin"
+        mc:Ignorable="d"
+        Title="EditEmployeeWindow" Height="450" 
+        Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.ColumnSpan="4">
+            <Border.Background>
+                <ImageBrush ImageSource="/Res/Background.png" 
+                            Stretch="UniformToFill"/>
+            </Border.Background>
+            <Border>
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" 
+                                         StartPoint="0.5,0" 
+                                         Opacity="0.7">
+                        <GradientStop Color="Black" 
+                                      Offset="1"/>
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#FF060606"/>
+                        <GradientStop Color="White" 
+                                      Offset="0.787"/>
+                        <GradientStop Color="White" 
+                                      Offset="0.357"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid Grid.Column="1"
+                      Grid.ColumnSpan="2"
+                      Margin="50 0">
+                    <Grid.Background>
+                        <SolidColorBrush Color="White"
+                                         Opacity="0.6"/>
+                    </Grid.Background>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Редактирование данных сотрудника"
+                               Grid.ColumnSpan="4"
+                               Grid.Column="0"
+                               HorizontalAlignment="Center"
+                               Margin="20"
+                               FontSize="25"
+                               FontWeight="Bold"/>
+                    <StackPanel x:Name="StckPnl"
+                                Grid.ColumnSpan="2"
+                                HorizontalAlignment="Center"
+                                Grid.Column="0"
+                                Margin="0 90">
+                        <TextBox x:Name="TbFirstName"
+                                 Tag="ВашеИмя"
+                                 Width="200"
+                                 Height="30"
+                                 Margin="10"
+                                 LostFocus="TextBox_LostFocus"
+                                 GotFocus="TextBox_GotFocus"
+                                 FontSize="17"
+                                 VerticalContentAlignment="Center"/>
+                        <TextBox x:Name="TbLastName"
+                                 Tag="ВашаФамилия"
+                                 Width="200"
+                                 Height="30"
+                                 Margin="10"
+                                 LostFocus="TextBox_LostFocus"
+                                 GotFocus="TextBox_GotFocus"
+                                 FontSize="17"
+                                 VerticalContentAlignment="Center"/>
+                        <TextBox x:Name="TbPatronymic"
+                                 Tag="ВашеОтчество"
+                                 Width="200"
+                                 Height="30"
+                                 Margin="10"
+                                 LostFocus="TextBox_LostFocus"
+                                 GotFocus="TextBox_GotFocus"
+                                 FontSize="17"
+                                 VerticalContentAlignment="Center"/>
+                        <TextBox x:Name="TbPhone"
+                                 Tag="Телефон"
+                                 Width="200"
+                                 Height="30"
+                                 Margin="10"
+                                 LostFocus="TextBox_LostFocus"
+                                 GotFocus="TextBox_GotFocus"
+                                 FontSize="17"
+                                 VerticalContentAlignment="Center"/>
+
+                    </StackPanel>
+                    <StackPanel Grid.ColumnSpan="2"
+                                HorizontalAlignment="Center"
+                                Grid.Column="2"
+                                Margin="0 90">
+                        <ComboBox x:Name="CmbStaffPosition"
+                                  Width="200"
+                                 Height="30"
+                                 Margin="10"
+                                 FontSize="17"
+                                 VerticalContentAlignment="Top">
+                        </ComboBox>
+                        <ComboBox x:Name="CmbGender"
+                                  Width="200"
+                                 Height="30"
+                                 Margin="10"
+                                 FontSize="17"
+                                 VerticalContentAlignment="Top">
+                        </ComboBox>
+                        <TextBox x:Name="TbNewLogin"
+                                 Tag="НовыйЛогин"
+                                 Width="200"
+                                 Height="30"
+                                 Margin="10"
+                                 LostFocus="TextBox_LostFocus"
+                                 GotFocus="TextBox_GotFocus"
+                                 FontSize="17"
+                                 VerticalContentAlignment="Center"/>
+                        <TextBox x:Name="TbNewPassword"
+                                 Tag="НовыйПароль"
+                                 Width="200"
+                                 Height="30"
+                                 Margin="10"
+                                 LostFocus="TextBox_LostFocus"
+                                 GotFocus="TextBox_GotFocus"
+                                 FontSize="17"
+                                 VerticalContentAlignment="Center">
+                        </TextBox>
+                    </StackPanel>
+                    <Button Grid.Column="0"
+                            Grid.ColumnSpan="4"
+                            Content="Сохранить изменения"
+                            Width="250"
+                            Height="35"
+                            FontSize="20"
+                            VerticalAlignment="Bottom"
+                            Margin="0 80 0 50" 
+                            FontWeight="Bold"
+                            Click="Button_Click"/>
+                    <TextBlock x:Name="TbBack"
+                               Text="Назад"
+                               Grid.ColumnSpan="4"
+                               FontSize="18"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Bottom"
+                               Margin="20"
+                               FontStyle="Italic"
+                               MouseLeftButtonUp="TbBack_MouseLeftButtonUp"/>
+                </Grid>
+            </Border>
+        </Border>
+    </Grid>
+</Window>

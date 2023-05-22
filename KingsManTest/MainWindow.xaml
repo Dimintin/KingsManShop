@@ -1,0 +1,60 @@
+﻿<Window x:Class="KingsManTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KingsManTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border Grid.Row="0"
+                Grid.RowSpan="2">
+            <Border.Background>
+                <ImageBrush ImageSource="/Res/Background.png"
+                            Stretch="UniformToFill"/>
+            </Border.Background>
+            <Border >
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" 
+                                         StartPoint="0.5,0" 
+                                         Opacity="0.7">
+                        <GradientStop Color="Black" 
+                                      Offset="1"/>
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#FF060606"/>
+                        <GradientStop Color="White" 
+                                      Offset="0.787"/>
+                        <GradientStop Color="White" 
+                                      Offset="0.357"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <StackPanel>
+                        <Button Name="BtnServiceList"
+                Margin="20"
+                Content="Список услуг"
+                FontSize="25" Click="BtnServiceList_Click"/>
+
+                        <Button Name="BtnClientList"
+                Margin="20"
+                Content="Список клиентов"
+                FontSize="25" 
+                Click="BtnClientList_Click"/>
+
+
+                        <Button Name="BtnEmployeeList"
+                Margin="20"
+                Content="Список сотрудников"
+                FontSize="25" Click="BtnEmployeeList_Click"/>
+
+                        <Button Name="BtnReportsList"
+                Margin="20"
+                Content="Отчеты производства"
+                FontSize="25" Click="BtnReportsList_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Border>
+    </Grid>
+</Window>
