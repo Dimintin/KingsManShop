@@ -24,7 +24,9 @@ namespace KingsManTest.Windows.Admin
             InitializeComponent();
 
             CmbGender.ItemsSource = ClassHelper.EF.Context.Gender.ToList();
+            CmbStaffPosition.ItemsSource = ClassHelper.EF.Context.Position.ToList();
             CmbGender.DisplayMemberPath = "GenderName";
+            CmbStaffPosition.DisplayMemberPath = "PositionName";
             CmbGender.SelectedItem = 0;
         }
 

@@ -103,12 +103,21 @@
                                 HorizontalAlignment="Center"
                                 Grid.Column="2"
                                 Margin="0 90">
+                        <ComboBox x:Name="CmbStaffPosition"
+                                  Width="200"
+                                 Height="30"
+                                 Margin="10"
+                                 FontSize="17"
+                                 VerticalContentAlignment="Top"
+                                  SelectedIndex="1">
+                        </ComboBox>
                         <ComboBox x:Name="CmbGender"
                                   Width="200"
                                  Height="30"
                                  Margin="10"
                                  FontSize="17"
-                                 VerticalContentAlignment="Top">
+                                 VerticalContentAlignment="Top"
+                                  SelectedIndex="1">
                         </ComboBox>
                         <TextBox x:Name="TbNewLogin"
                                  Tag="НовыйЛогин"

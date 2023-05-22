@@ -107,7 +107,8 @@
                                  Height="30"
                                  Margin="10"
                                  FontSize="17"
-                                 VerticalContentAlignment="Top">
+                                 VerticalContentAlignment="Top"
+                                  SelectedIndex="1">
                         </ComboBox>
                         <TextBox x:Name="TbNewLogin"
                                  Tag="НовыйЛогин"
