@@ -46,3 +46,6 @@
 ![image](https://user-images.githubusercontent.com/101355738/231827158-7f94023d-9937-4b9a-aa47-480be7ccdbe2.png)
 ![image](https://user-images.githubusercontent.com/101355738/231824695-0441c5ae-4d48-493a-9699-29de57d57ed5.png)
 
+<b> Окно отчетов </b>
+
+![image](https://github.com/Dimintin/KingsManShop/assets/101355738/0ee7b48b-2866-4cd2-ae15-3dd87c239ce8)
