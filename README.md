@@ -30,23 +30,22 @@
 
 <b> Список клиентов </b>
 
-![image](https://user-images.githubusercontent.com/101355738/231258891-659d5572-e999-4f29-87bf-a8527a4bc5e0.png)
+![image](https://github.com/Dimintin/KingsManShop/assets/101355738/b6fc0c9c-ec5e-4409-9d25-903ad8224c79)
 
 <b> Список работников </b>
 
-![image](https://user-images.githubusercontent.com/101355738/231258991-3286947f-9cd6-40e2-be71-721f04fc2427.png)
+![image](https://github.com/Dimintin/KingsManShop/assets/101355738/3acc56a2-2a5c-41b4-aed9-ff3dfa5864c5)
 
 <b> Корзина </b>
 
 ![image](https://user-images.githubusercontent.com/101355738/231247309-5a98d05b-36af-4577-a68c-ffc88338c7b8.png)
-![image](https://user-images.githubusercontent.com/101355738/231825449-d8e32367-86c1-4c0c-9794-01d2a872bea0.png)
+![image](https://github.com/Dimintin/KingsManShop/assets/101355738/7ac6508c-64a1-406f-9c0c-255738cd1279)
 
 <b> Добавление записей о заказе в базу данных </b>
 
 ![image](https://user-images.githubusercontent.com/101355738/231827158-7f94023d-9937-4b9a-aa47-480be7ccdbe2.png)
 ![image](https://user-images.githubusercontent.com/101355738/231824695-0441c5ae-4d48-493a-9699-29de57d57ed5.png)
 
-<b>Окно корзины с модификаторами количества товара</b>
+<b> Окно отчетов </b>
 
-![image](https://user-images.githubusercontent.com/101355738/234345023-9ad57f13-2f26-4898-be18-1d5b4259d7c4.png)
-
+![image](https://github.com/Dimintin/KingsManShop/assets/101355738/0ee7b48b-2866-4cd2-ae15-3dd87c239ce8)
