@@ -30,11 +30,11 @@
 
 <b> Список клиентов </b>
 
-![image](https://user-images.githubusercontent.com/101355738/231258891-659d5572-e999-4f29-87bf-a8527a4bc5e0.png)
+![image](https://github.com/Dimintin/KingsManShop/assets/101355738/b6fc0c9c-ec5e-4409-9d25-903ad8224c79)
 
 <b> Список работников </b>
 
-![image](https://user-images.githubusercontent.com/101355738/231258991-3286947f-9cd6-40e2-be71-721f04fc2427.png)
+![image](https://github.com/Dimintin/KingsManShop/assets/101355738/3acc56a2-2a5c-41b4-aed9-ff3dfa5864c5)
 
 <b> Корзина </b>
 
