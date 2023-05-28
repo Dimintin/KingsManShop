@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -20,6 +21,9 @@ namespace KingsManTest
     /// </summary>
     public partial class AuthWindow : Window
     {
+        DB.Employee authEmployee = null;
+        DB.Client authClient = null;
+
         public AuthWindow()
         {
             InitializeComponent();
@@ -47,15 +51,15 @@ namespace KingsManTest
         {
             if ((string.IsNullOrEmpty(PbPassword.Text) || PbPassword.Text != Convert.ToString(PbPassword.Tag)) && (string.IsNullOrEmpty(TbLogin.Text) || TbLogin.Text != Convert.ToString(TbLogin.Tag)))
             {
-                var authUser = ClassHelper.EF.Context.Employee.ToList().Where(i => i.Password == PbPassword.Text && i.Login == TbLogin.Text).FirstOrDefault();
-
-                if (authUser != null)
+                authEmployee = ClassHelper.EF.Context.Employee.ToList().Where(i => i.Password == PbPassword.Text && i.Login == TbLogin.Text).FirstOrDefault();
+                
+                if (authEmployee != null)
                 {
                     MainWindow mainWindow = new MainWindow();
                     this.Close();
                     mainWindow.ShowDialog();
 
-                    ClassHelper.SaveUserClass.SavedEmployee = authUser;
+                    ClassHelper.SaveUserClass.SavedEmployee = authEmployee;
                 }
                 else
                 {

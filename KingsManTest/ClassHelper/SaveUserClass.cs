@@ -8,6 +8,7 @@ namespace KingsManTest.ClassHelper
 {
     internal class SaveUserClass
     {
-        public static DB.Employee SavedEmployee { get; set; } = new DB.Employee();
+        public static DB.Employee SavedEmployee { get; set; } = null;
+        public static DB.Client SavedClient { get; set; } = null;
     }
 }

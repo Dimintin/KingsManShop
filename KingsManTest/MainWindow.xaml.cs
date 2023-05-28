@@ -25,6 +25,30 @@ namespace KingsManTest
         public MainWindow()
         {
             InitializeComponent();
+
+            if (ClassHelper.SaveUserClass.SavedEmployee != null)
+            {
+                switch (ClassHelper.SaveUserClass.SavedEmployee.PositionId)
+                {
+                    case 1:
+                        {
+
+                            break;
+                        }
+                    case 2:
+                        {
+                            BtnReportsList.Visibility = Visibility.Collapsed;
+                            break;
+                        }
+                    case 3:
+                        {
+                            BtnReportsList.Visibility = Visibility.Collapsed;
+                            break;
+                        }
+                    default:
+                        break;
+                }
+            }
         }
 
         private void BtnEmployeeList_Click(object sender, RoutedEventArgs e)
